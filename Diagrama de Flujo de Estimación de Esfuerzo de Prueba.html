@@ -1,0 +1,145 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Diagrama de Flujo de Estimación de Esfuerzo de Pruebas</title>
+      <script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+          mermaid.initialize({ startOnLoad: true });
+      </script>
+      <style>
+          body {
+              font-family: 'Arial', sans-serif;
+              background-image: url("https://beos-sas.com/web/image/1707/origen-nombres-informatica-nunca-hubieras-imaginado_2.jpg");
+              margin: 0;
+              padding: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              background-size: cover;  
+              opacity: 200; 
+             
+          }
+          .mermaid {
+              width: 100%;  
+              height: 100%;  
+
+              background-color: transparent;
+            
+             
+          }
+
+          
+      </style>
+  </head>
+  <body>
+    <!-- Luis Fernando Paxel Cojolon 0910-20-388 -->
+      <div class="mermaid">
+        %%{ init : { "theme" : "default", "themeVariables": { "primaryColor": "#ff0077", "edgeLabelBackground":"#ff0077", "tertiaryColor": "#ff0077", "lineColor": "#ff0077", "border1": "#ff0077", "border2": "#ff0077","borderRadius": "10px" }}}%%
+          flowchart LR
+          A[Estimar esfuerzo de prueba] --> B[Elaborar la estrategia y plan de pruebas]
+          B --> B1[Definición de objetivos]
+          B1 --> B1a[Identificar metas específicas]
+          B1 --> B1b[Establecer criterios de éxito]
+          B --> B2[Recursos necesarios]
+          B2 --> B2a[Personal requerido]
+          B2 --> B2b[Herramientas y tecnología]
+      
+          A --> C[Elaborar los componentes]
+          C --> C1[Identificación de módulos]
+          C1 --> C1a[Análisis de requisitos]
+          C1 --> C1b[Clasificación de módulos]
+          C --> C2[Asignación de tareas]
+          C2 --> C2a[Distribución según habilidades]
+          C2 --> C2b[Establecimiento de plazos]
+      
+          A --> D[Diseñar la cobertura]
+          D --> D1[Tipos de pruebas]
+          D1 --> D1a[Pruebas unitarias]
+          D1 --> D1b[Pruebas de integración]
+          D1 --> D1c[Pruebas de sistema]
+          D --> D2[Áreas críticas]
+          D2 --> D2a[Identificación de riesgos]
+          D2 --> D2b[Priorizar áreas de atención]
+      
+          A --> E[Ejecutar las pruebas]
+          E --> E1[Herramientas utilizadas]
+          E1 --> E1a[Selección de herramientas de automatización]
+          E1 --> E1b[Herramientas de gestión de pruebas]
+          E --> E2[Cronograma]
+          E2 --> E2a[Definición de hitos]
+          E2 --> E2b[Seguimiento del progreso]
+      
+          A --> F[Reportar el avance]
+          F --> F1[Frecuencia de informes]
+          F1 --> F1a[Informes diarios]
+          F1 --> F1b[Informes semanales]
+          F --> F2[Formatos de reporte]
+          F2 --> F2a[Formato estándar]
+          F2 --> F2b[Informes personalizados]
+      
+          A --> G[Reportar las incidencias]
+          G --> G1[Proceso de registro]
+          G1 --> G1a[Documentación de incidencias]
+          G1 --> G1b[Clasificación de incidencias]
+          G --> G2[Seguimiento]
+          G2 --> G2a[Actualización de estado]
+          G2 --> G2b[Resolución de incidencias]
+      
+          A --> H[Registrar los procesos]
+          H --> H1[Documentación]
+          H1 --> H1a[Manual de pruebas]
+          H1 --> H1b[Registros de resultados]
+          H --> H2[Lecciones aprendidas]
+          H2 --> H2a[Revisión de procesos]
+          H2 --> H2b[Mejoras para el futuro]
+      
+          A --> I[Elaborar reportes finales]
+          I --> I1[Resumen de resultados]
+          I1 --> I1a[Resultados de pruebas]
+          I1 --> I1b[Comparativa con objetivos]
+          I --> I2[Recomendaciones]
+          I2 --> I2a[Sugerencias para futuras pruebas]
+          I2 --> I2b[Mejoras en el proceso]
+
+          %% Estilo de nodos %%
+    style A fill:#ff0077,stroke-width:2px;
+    style B fill:#FF8DC2,stroke-width:2px;
+    style B1 fill:#FF55A4,stroke-width:2px;
+    style B2 fill:#FF55A4,stroke-width:2px;
+
+    style C fill:#FF8DC2,stroke-width:2px;
+    style C1 fill:#FF55A4,stroke-width:2px;
+    style C2 fill:#FF55A4,stroke-width:2px;
+
+    style D fill:#FF8DC2,stroke-width:2px;
+    style D1 fill:#FF55A4,stroke-width:2px;
+    style D2 fill:#FF55A4,stroke-width:2px;
+
+    style E fill:#FF8DC2,stroke-width:2px;
+    style E1 fill:#FF55A4,stroke-width:2px;
+    style E2 fill:#FF55A4,stroke-width:2px;
+
+    style F fill:#FF8DC2,stroke-width:2px;
+    style F1 fill:#FF55A4,stroke-width:2px;
+    style F2 fill:#FF55A4,stroke-width:2px;
+
+    style G fill:#FF8DC2,stroke-width:2px;
+    style G1 fill:#FF55A4,stroke-width:2px;
+    style G2 fill:#FF55A4,stroke-width:2px;
+
+    style H fill:#FF8DC2,stroke-width:2px;
+    style H1 fill:#FF55A4,stroke-width:2px;
+    style H2 fill:#FF55A4,stroke-width:2px;
+
+    style I fill:#FF8DC2,stroke-width:2px;
+    style I1 fill:#FF55A4,stroke-width:2px;
+    style I2 fill:#FF55A4,stroke-width:2px;
+
+
+
+      </div>
+  </body>
+  </html>
